@@ -1,0 +1,12 @@
+namespace: testing
+
+# Description:
+#   Working directory, normally used as the path to the repository.
+# Example:
+working_dir: 'demo-repo'
+
+# Description:
+#   SAST for source code.
+# Example:
+path:
+  include: 'index.html'
