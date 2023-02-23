@@ -8,4 +8,4 @@ jobs:
       - uses: docker://ghcr.io/fluidattacks/makes:22.11
         name: tests
         with:
-          args: m . /helloWorld 1 2 3
+          args: m .
