@@ -9,4 +9,5 @@ working_dir: 'demo-repo'
 #   SAST for source code.
 # Example:
 path:
-  include: 'index.html'
+  include: 
+  - 'index.html'
