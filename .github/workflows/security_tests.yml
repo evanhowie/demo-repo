@@ -5,7 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
-      - uses: docker://ghcr.io/fluidattacks/makes:22.11
-        name: tests
-        with:
-          args: m gitlab:fluidattacks/universe@trunk /skims scan stuff/config.yml
+        
+      - name: do stuff
+        run: |
+          docker build . --file Dockerfile -t testing
+          docker run testing m gitlab:fluidattacks/universe@trunk /skims scan stuff/config.yml
