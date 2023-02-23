@@ -3,7 +3,7 @@ namespace: testing
 # Description:
 #   Working directory, normally used as the path to the repository.
 # Example:
-working_dir: 'demo-repo'
+working_dir: .
 
 # Description:
 #   SAST for source code.
